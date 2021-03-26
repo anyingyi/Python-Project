@@ -1,0 +1,9 @@
+data\bat\download (1).jpg,2
+data\bat\download (2).jpg,2
+data\bat\download.jpg,2
+data\cat\download (1).jpg,0
+data\cat\download (2).jpg,0
+data\cat\download.jpg,0
+data\dog\download (1).jpg,1
+data\dog\download (3).jpg,1
+data\dog\download.jpg,1
