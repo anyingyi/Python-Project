@@ -82,11 +82,11 @@ class NeuralNetwork:
 
 if __name__ == "__main__":
 
-    nn = NeuralNetwork([1, 3,3, 2,1],activation="tanh")
-    X = np.linspace(-np.pi,np.pi,200)
-    y = np.sin(X)
+    nn = NeuralNetwork([2, 3,3, 2,1],activation="sigmoid")
+    X = np.array([[0,0],[0,1],[1,0],[1,1]])
+    y = np.array([[0],[1],[1],[0]])
     nn.fit(X, y)
 
-    test_data=np.linspace(-np.pi,np.pi,20)
+    test_data=X
     for e in test_data:
         print(e, nn.predict(e))
