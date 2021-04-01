@@ -76,6 +76,7 @@ for epoch in range(EPOCH):
     for step,(b_x,b_y) in enumerate(train_loader):
         output=cnn(b_x)
         loss=loss_func(output,b_y)
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()

@@ -11,7 +11,7 @@ import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 # hyper parameters
-EPOCH = 2
+EPOCH = 10
 BATCH_SIZE = 64
 LR = 0.005
 DOWNLOAD_MNIST = False
@@ -126,5 +126,14 @@ ax.set_xlim(X.min(),X.max())
 ax.set_ylim(Y.min(),Y.max())
 ax.set_zlim(Z.min(),Z.max())
 plt.show()
+
+# show one picture as test
+plt.figure()
+origin_one=view_data[0].reshape((28,28))
+decoded_one=_[0].reshape((28,28))
+plt.subplot(121)
+plt.imshow(origin_one.data.numpy())
+plt.imshow(decoded_one.data.numpy())
+
 
 
